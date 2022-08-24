@@ -4,13 +4,19 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>SOC Starter</title>
-
-		<link href="./client/styles/index.css" rel="stylesheet" />
+		<title>User API</title>
+	<link href="client/styles/index.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div id="root"></div>
-
-		<script type="module" src="./client/src/init.js"></script>
+		<div class="wrapper">
+			   <h1>Welcome to user API</h1>
+			   <div class="buttons">
+			     <button id="get-all" onclick="getUsers">Get users</button>
+			     <input type="text" id="id" value="Enter an ID">
+			     <button id="get-one">Get User by ID</button>
+				 </div>
+		  <div id="result"></div>
+	    </div>
+		<script src="./client/src/init.js"></script>
 	</body>
 </html>
