@@ -1,22 +1,58 @@
 @import url('./other-file.css');
-.page {
-    background-color: aqua;
+body{
+  background-color: black;
 }
-
 .input {
   display: block;
   text-align: center;
   height: 30%;
   
 }
+.input h1{
+  font-family: Arial,sans-serif;
+  font-weight: 150px;
+  font-size: 80px;
+  padding: 40px;
+  color:white;
+}
+  
 .buttons
     {
-    margin:100px;
+    margin:50px;
     text-align: center;
     padding: 0;
 }
 .buttons *{
   display: inline-block;
+}
+
+
+#get-all, #user-id{
+margin-right: 40px;
+width:200px; 
+font-size:18px;
+padding: 10px;
+background: lightgoldenrodyellow;
+color: black;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+#get-all:hover, #user-id:hover {
+background: yellow;
+color:black;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+
+
+#id{
+  font-size:18px;
+padding: 10px;
+  border-radius: 20px;
 }
 
 #result {
@@ -25,7 +61,7 @@
   grid-gap: 3px;}
 
 .user{
-  background-color: lightblue;
+  background-color: whitesmoke;
 }
 .user h2{
   padding-left: 25px;
