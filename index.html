@@ -8,15 +8,19 @@
 	<link href="client/styles/index.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="page">
+			<section class="input">
 			   <h1>Welcome to user API</h1>
 			   <div class="buttons">
-			     <button id="get-all" onclick="getUsers">Get users</button>
-			     <input type="text" id="id" value="Enter an ID">
-			     <button id="get-one">Get User by ID</button>
+			     <button id="get-all">Get all users</button>
+				 <form action="#">			
+               <input type="number" min="1" max="10" required>
+                <input type="submit" value="Get user by ID">
+               </form>
 				 </div>
+			</section>
 		  <div id="result"></div>
 	    </div>
-		<script src="./client/src/init.js"></script>
+		<script type="module" src="./client/src/init.js"></script>
 	</body>
 </html>

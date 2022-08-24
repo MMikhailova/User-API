@@ -1,3 +1,6 @@
-export const addGetUserListener = (element) => {
-	element.addEventListener(ADD_EVENT, addHandler);
+import { getUsers } from "../handlers/handler.js";
+
+
+export const getAllListener = (element) => {
+	element.addEventListener('click', getUsers);
 };
