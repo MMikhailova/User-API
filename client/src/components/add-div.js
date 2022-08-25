@@ -1,6 +1,9 @@
+import { OUTPUT_ID } from "../../data/constants.js";
+
+//Function creates a 'div' with user information
 export function showUsers(data) {
 	//clean previous result
-	const result = document.getElementById('result');
+	const result = document.getElementById(OUTPUT_ID);
 	while (result.firstChild) {
 		result.firstChild.remove();
     }
